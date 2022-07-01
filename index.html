@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a short survey about Coding</p>
+        </header>
+
+        <form action="" method="POST" id="survey-form" autocomplete="on">
+
+            <div>
+                <label for="name" id="name-label">Here you can enter your name</label>
+                <input name="name" type="text" id="name" placeholder="enter your name" required>
+            </div>
+
+            <div>
+                <label for="email" id="email-label">And here goes your email address</label>
+                <input name="email" type="email" id="email" placeholder="email@place.com" required>
+            </div>
+
+            <div>
+                <label for="number" id="number-label">And of course if you wanna tell us how old you are</label>
+                <input name="age" type="number" id="number" min="8" max="105" placeholder="enter your age if you want">
+            </div>
+
+            <div>
+                <p>What is your highest formal education</p>
+                <select name="dropdown" id="dropdown">
+                    <option value="Elementary">Elementary school</option>
+                    <option value="Highschool">Highschool</option>
+                    <option value="Undergrad">Undergrad</option>
+                    <option value="masters">Masters</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Do you like this survey?</p>
+                <input type="radio" name="uLike" id="meh" value="1">
+                <label for="meh">meh</label>
+                <input type="radio" name="uLike" id="guess" value="2">
+                <label for="guess">it's ok I guess</label>
+                <input type="radio" name="uLike" id="cool" value="3">
+                <label for="cool">It's cool</label>
+            </div>
+
+            <div>
+                <p>With what programing languages did you work with?</p>
+                <input type="checkbox" name="" id="python" value="python">
+                <label for="python">Python</label>
+                <input type="checkbox" name="" id="js" value="js">
+                <label for="js">Javascript</label>
+                <input type="checkbox" name="" id="ruby" value="ruby">
+                <label for="ruby">Ruby</label>
+                <input type="checkbox" name="" id="c" value="c">
+                <label for="c">C</label>
+                <input type="checkbox" name="" id="c++" value="c++">
+                <label for="c++">C++</label>
+                <input type="checkbox" name="" id="c#" value="c#">
+                <label for="c#">C#</label>
+                <input type="checkbox" name="" id="java" value="java">
+                <label for="java">Java</label>
+            </div>
+
+            <div>
+                <p>Whats can you tell me that I didn't ask and You think it's important to know?</p>
+                <textarea name="message" id="message" cols="30" rows="10">Tell me :)</textarea>
+            </div>
+
+
+
+            <input type="submit" value="submit" id="submit">
+        </form>
+
+    </main>
+
+</body>
+
+</html>
